@@ -6,4 +6,5 @@ Control de cambios (2/06/2019):
 
 Control de cambios (3/06/2019):
 - Se agrega de manera independiente el Splash Funcional; para análisis y calificación respectiva.
+- Se agrega de manera independiente la funcionalidad de Datos de Usuario, que incluye comprobación de datos ingresados.
 
