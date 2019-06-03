@@ -1,48 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A4A4A4"
-    tools:context=".SplashRiesgo">
-
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/cambiaFuente"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="60dp"
         android:gravity="center_horizontal"
         android:text="@string/riesgo_visual"
         android:textColor="#0000FF"
-        android:textSize="50sp"
+        android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="550dp"
-        android:gravity="center"
-        android:text="@string/luis_botero_powered_by_android_studio"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:textStyle="italic"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="260dp"
         android:layout_marginBottom="440dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/horus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Nombre"
+        android:layout_width="377dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="210dp"
+        android:gravity="center"
+        android:hint="@string/txt_nombre"
+        android:inputType=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="373dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="135dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/txt_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="46dp"
+        android:background="#0F0F0F"
+        android:text="@string/btnIngresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
