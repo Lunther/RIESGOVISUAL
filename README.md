@@ -7,5 +7,5 @@ Control de cambios (3/06/2019):
 
 Control de cambios (4/06/2019):
 - Se agrega de manera independiente la funcionalidad de calificación de la app; que incluye comprobación de datos ingresados; así como el avance a otra pestaña, cierre de la app y envío de correo.
-- Se agregan los .java y .xml de las funcionalidades antes citadas.
+<b> NOTA </b> Se puede hacer uso del intent desarrollado para envíar email para envíar los resultados, así se logra cumplir una funcionalidad adicional determinada; se espera refinar la valoración haciendo uso de las librerias JAVA Mail.
 
