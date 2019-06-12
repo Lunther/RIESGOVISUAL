@@ -9,3 +9,6 @@ Control de cambios (4/06/2019):
 - Se agrega de manera independiente la funcionalidad de calificación de la app; que incluye comprobación de datos ingresados; así como el avance a otra pestaña, cierre de la app y envío de correo.
 <b> NOTA </b> Se puede hacer uso del intent desarrollado para envíar email para envíar los resultados, así se logra cumplir una funcionalidad adicional determinada; se espera refinar la valoración haciendo uso de las librerias JAVA Mail.
 
+Control de cambios (11/06/2019):
+- Se agrega de manera independiente la funcionalidad de información de la empresa, que extiende entre otras la capturar y uso de GPS dentro de la aplicación de manera automatica.
+
