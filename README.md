@@ -12,3 +12,6 @@ Control de cambios (4/06/2019):
 Control de cambios (11/06/2019):
 - Se agrega de manera independiente la funcionalidad de información de la empresa, que extiende entre otras la capturar y uso de GPS dentro de la aplicación de manera automatica.
 
+Control de cambios (12/06/2019):
+- Se agrega la funcionalidad de valroación del riesgo donde se cumple con lo relacionado a calculos matematicos y aplicación de la metodología Frecuencia x Consecuencia.
+
