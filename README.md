@@ -14,4 +14,5 @@ Control de cambios (11/06/2019):
 
 Control de cambios (12/06/2019):
 - Se agrega la funcionalidad de valroación del riesgo donde se cumple con lo relacionado a calculos matematicos y aplicación de la metodología Frecuencia x Consecuencia.
+- Se anexa carpeta con clases desarrolladas en .java a la fecha.
 
