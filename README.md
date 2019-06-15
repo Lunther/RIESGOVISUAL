@@ -16,3 +16,7 @@ Control de cambios (12/06/2019):
 - Se agrega la funcionalidad de valroación del riesgo donde se cumple con lo relacionado a calculos matematicos y aplicación de la metodología Frecuencia x Consecuencia.
 - Se anexa carpeta con clases desarrolladas en .java a la fecha.
 
+Control de cambios (15/06/2019):
+- Se agrega funcionalidad de presentación de resultados, esta se compone de dos clases principales, que incluyen así mismo la geolocalización y visualización de agentes mitigantes; envío de resultados y matriz de riesgos.
+- Se actualiza carpeta de clases.
+
