@@ -20,3 +20,5 @@ Control de cambios (15/06/2019):
 - Se agrega funcionalidad de presentación de resultados, esta se compone de dos clases principales, que incluyen así mismo la geolocalización y visualización de agentes mitigantes; envío de resultados y matriz de riesgos.
 - Se actualiza carpeta de clases.
 
+Control de cambios (16/06/2019):
+- Se actualiza carpeta de clases y se desarrolla al funcionalidad de generar PDF dentro de PresentacionResultados.
