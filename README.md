@@ -22,3 +22,6 @@ Control de cambios (15/06/2019):
 
 Control de cambios (16/06/2019):
 - Se actualiza carpeta de clases y se desarrolla al funcionalidad de generar PDF dentro de PresentacionResultados.
+
+Control de cambios (18/06/2019):
+- Se indexa APK con funcionalidades unidas, movimientos sin errores entre pantallas propuestas, acorde a diagrama de actividades. Se adjunta proyecto en zip con el desarrollo.
