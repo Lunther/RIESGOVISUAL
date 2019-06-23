@@ -28,3 +28,6 @@ Control de cambios (18/06/2019):
 
 Control de cambios (21/06/2019):
 - Se indexa APK con funcionalidad de pintar mapa de calor, enviar correo personalizado y cargar coordenadas externas funcional. Se adjunta proyecto en zip con este desarrollo.
+
+Control de cambios (23/06/2019)
+- Se indexa APK con todas las funcionalidades propuestas. Así como el zip del desarrollo dado; APK 3.0.
