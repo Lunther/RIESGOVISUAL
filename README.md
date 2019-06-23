@@ -31,4 +31,4 @@ Control de cambios (21/06/2019):
 
 Control de cambios (23/06/2019)
 - Se indexa APK con todas las funcionalidades propuestas. Así como el zip del desarrollo dado; APK 3.0.
-- Se indexa APK con corrección de bugs en calculis, APK 4.0.
+- Se indexa APK con corrección de bugs en calculos y presentación de resultados que se daba en la versión 3.0; se denomina este cambio como APK 4.0 y contiene además el ZIP de este último desarrollo.
