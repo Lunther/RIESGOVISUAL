@@ -32,3 +32,7 @@ Control de cambios (21/06/2019):
 Control de cambios (23/06/2019)
 - Se indexa APK con todas las funcionalidades propuestas. Así como el zip del desarrollo dado; APK 3.0.
 - Se indexa APK con corrección de bugs en calculos y presentación de resultados que se daba en la versión 3.0; se denomina este cambio como APK 4.0 y contiene además el ZIP de este último desarrollo.
+
+Control de cambios (28/06/2019)
+- Se indexa APK versión 5.0 está cuenta con mejoras en el aspecto gráfico dirigido a paleta de colores, ajustes de amarres (constraint) y funcionalidad de botón inactivo para minimizar error en Valoración de Riesgos.
+- Se indexa .ZIP 5.0 con el proyecto en su totalidad.
