@@ -41,3 +41,9 @@ Control de cambios (29/06/2019):
 - Se indexa APK versión 6.0, se corrije bug de permisos de geolocalización, se mejora en su totalidad los aspectos gráficos y de anclaje de los elementos.
 - Se idexa el .zip correspondiente.
 - Se indexa versión 7.0; geolocalización mejorada y botón de localizar.
+
+Control de cambios (30/06/2019):
+- Se indexa versión 8.0 con geofuncional, api y constraints.
+- Se indexa los SRC del proyecto.
+- Se indexa el ZIP 8.0
+- Se eliminar versiones anteriores por comodidad para el usuario.
