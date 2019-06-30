@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Riesgo Visual</string>
+    <string name="tituloSplash">Riesgo Visual</string>
+    <string name="autorSplash">Luis Carlos Botero - Powered by: Android Studio</string>
+    <string name="horusSplash">Horus</string>
+    <string name="TituloUsuario">RIESGO VISUAL</string>
+    <string name="nombreUsuario">Nombre</string>
+    <string name="emailUsuario">Email</string>
+    <string name="btnIngresar">INGRESAR</string>
+    <string name="infoEmpresa">INFORMACIÓN EMPRESA</string>
+    <string name="nitEmpresa">Nit</string>
+    <string name="nombreEmpresa">Nombre</string>
+    <string name="nombreSede">Nombre Sede</string>
+    <string name="geolocalizacion">GEOLOCALIZACIÓN</string>
+    <string name="longitudSede">LONGITUD</string>
+    <string name="val0">0.000</string>
+    <string name="latitudSede">LATITUD</string>
+    <string name="salir">SALIR</string>
+    <string name="btnSalir">ENVIAR</string>
+    <string name="btnEnviar">ENVIAR</string>
+    <string name="btnVolver">VOLVER</string>
+    <string name="valoracionTitulo">VALORACION DE RIESGOS</string>
+    <string name="perimetroTitulo">Escenario 1 - Perimetro</string>
+    <string name="accesoTitulo">Escenario 2 - Accesos</string>
+    <string name="areasTitulo">Escenario 3 - Areas internas</string>
+    <string name="hurto">Hurto</string>
+    <string name="homicidio">Homicidio</string>
+    <string name="incendio">Incendio</string>
+    <string name="sabotaje">Sabotaje</string>
+    <string name="indicaciones">Instrucciones: La primera de las columnas indica la probabilidad, la segunda de ellas indica el valor de la consecuencia. No podrá continuar hasta que presione el botón valorar.</string>
+    <string name="valorar">VALORAR</string>
+    <string name="valriesgo">Total</string>
+    <string-array name="ValoracionProbabilidad">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="ValoracionConsecuencia">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_agentes">Map</string>
+    <string name="resultadosTitulo">RESULTADOS VALORACIÓN</string>
+    <string name="r4_sabotaje">R4 - Sabotaje</string>
+    <string name="r2_homicidio">R2 - Homicidio</string>
+    <string name="r3_incendio">R3 - Incendio</string>
+    <string name="r1_hurto">R1 - Hurto</string>
+    <string name="escalaResultados">ESCALA DE VALORACIÓN</string>
+    <string name="recomendaciones">RECOMENDACIONES</string>
+    <string name="consecuencia">PROBABILIDAD X CONSECUENCIA</string>
+    <string name="bajo">Bajo</string>
+    <string name="medio">Medio</string>
+    <string name="fuerte">Fuerte</string>
+    <string name="alto">Alto</string>
+    <string name="textoRecomienda">INGRESE LAS RECOMENDACIONES</string>
+    <string name="mapa_agentes">MAPA AGENTES</string>
+    <string name="descargar_pdf">DESCARGAR PDF</string>
+    <string name="enviar_email">ENVIAR EMAIL</string>
+    <string name="comentario">TU COMENTARIO ES IMPORTANTE</string>
+    <string name="escribir">ESCRIBE TU COMENTARIO AQUÍ</string>
+    <string name="valoracionApp">ENVIAR VALORACION</string>
+    <string name="habeasNota">Dejando tu comentario, aceptas la politica de Habeas Data contenidas en la Ley 1581 de 2012 y al Decreto 1377 de 2013, deonde permites  recolectar, recaudar, usar, circular, suprimir, procesar, compilar, intercambiar, dar tratamiento, actualizar y disponer de los datos que han sido suministrados. </string>
+    <string name="localizar">Localizar</string>
+</resources>
