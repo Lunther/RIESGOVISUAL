@@ -47,3 +47,6 @@ Control de cambios (30/06/2019):
 - Se indexa los SRC del proyecto.
 - Se indexa el ZIP 8.0
 - Se eliminar versiones anteriores por comodidad para el usuario.
+
+Control de ccambios (02/07/19):
+- Se indexa versión 9.0, posee Scroll View para usuarios de pantallas pequeñas, así como restricciones de textos para emails invalidos y números en la casilla NIT.
