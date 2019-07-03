@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFF"
+    tools:context=".Resultados">
+
+    <TextView
+        android:id="@+id/Valoracion"
+        android:layout_width="282dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/resultadosTitulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toTopOf="@+id/guideline23" />
+
+    <TextView
+        android:id="@+id/Riesgo4"
+        android:layout_width="97dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/r4_sabotaje"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toEndOf="@+id/Riesgo3"
+        app:layout_constraintTop_toBottomOf="@+id/Riesgo2" />
+
+    <TextView
+        android:id="@+id/Riesgo2"
+        android:layout_width="98dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/r2_homicidio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toEndOf="@+id/Riesgo1"
+        app:layout_constraintTop_toBottomOf="@+id/Valoracion" />
+
+    <TextView
+        android:id="@+id/Riesgo3"
+        android:layout_width="93dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/r3_incendio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/Riesgo4"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/Riesgo1" />
+
+    <TextView
+        android:id="@+id/Riesgo1"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/r1_hurto"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/Riesgo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/Valoracion" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="301dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/consecuencia2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Val1x5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val2x5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val3x5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val4x5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FB2507"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val5x5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FB2507"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Val1x4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val2x4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val3x4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val4x4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val5x4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FB2507"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Val1x3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val2x3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val3x3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val4x3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val5x3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FB2507"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Val1x2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val2x2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val3x2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val4x2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val5x2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Val1x1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val2x1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#1D880B"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val3x1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val4x1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#FBEC07"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Val5x1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="#F18811"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#000000" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Escala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/escalaResultados"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/recomendaciones"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/consecuencia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/consecuencia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/Riesgo3" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="242dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/Escala">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Bajo"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#1D880B"
+                android:text="@string/bajo"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Medio"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FBEC07"
+                android:text="@string/medio"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/MedAlto"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#F18811"
+                android:text="@string/fuerte"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Alto"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FB2507"
+                android:text="@string/alto"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/txtResumen"
+        android:layout_width="365dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:hint="@string/textoRecomienda"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/Resumen" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:text="@string/btnVolver"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnValorar"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/btnDescargar" />
+
+    <Button
+        android:id="@+id/btnValorar"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:onClick="pasar"
+        android:text="@string/valorar"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toEndOf="@+id/btnSalir"
+        app:layout_constraintTop_toBottomOf="@+id/btnDescargar" />
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#000000"
+        android:text="@string/mapa_agentes"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnDescargar"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/txtResumen" />
+
+    <Button
+        android:id="@+id/btnDescargar"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#000000"
+        android:text="@string/descargar_pdf"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnEmail"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/btnMapa"
+        app:layout_constraintTop_toBottomOf="@+id/txtResumen" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:text="@string/enviar_email"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toEndOf="@+id/btnDescargar"
+        app:layout_constraintTop_toBottomOf="@+id/txtResumen" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02872777" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    </HorizontalScrollView>

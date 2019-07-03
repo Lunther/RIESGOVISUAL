@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFF"
+    tools:context=".ValoracionAplicacion">
+
+    <TextView
+        android:id="@+id/Riesgo_Visual"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tituloSplash"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toTopOf="@+id/guideline19" />
+
+    <TextView
+        android:id="@+id/Valorar_APP"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/comentario"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/Riesgo_Visual" />
+
+    <EditText
+        android:id="@+id/textComentario"
+        android:layout_width="288dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/escribir"
+        android:inputType="textMultiLine"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/Valorar_APP" />
+
+    <Button
+        android:id="@+id/btnFinal"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:text="@string/valoracionApp"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textComentario" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/habeasNota"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toBottomOf="@+id/textComentario" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    </HorizontalScrollView>

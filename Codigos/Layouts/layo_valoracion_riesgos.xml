@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".ValoracionRiesgos">
+
+    <TextView
+        android:id="@+id/Valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/valoracionTitulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <TextView
+        android:id="@+id/Escenario1"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/perimetroTitulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/Valoracion" />
+
+    <TextView
+        android:id="@+id/Escenario2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/accesoTitulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/spr4e1pro" />
+
+    <TextView
+        android:id="@+id/Escenario3"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/areasTitulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/spr4e2pro" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:text="@string/btnVolver"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toEndOf="@+id/indicaciones"
+        app:layout_constraintTop_toBottomOf="@+id/btnValorar" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_inactivo"
+        android:onClick="enviar"
+        android:text="@string/btnEnviar"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toEndOf="@+id/indicaciones"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalir" />
+
+    <TextView
+        android:id="@+id/r1e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hurto"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e3pro"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario3" />
+
+    <TextView
+        android:id="@+id/r2e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homicidio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e2pro"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r1e2" />
+
+    <TextView
+        android:id="@+id/r2e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homicidio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e1pro"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r1e1" />
+
+    <TextView
+        android:id="@+id/r3e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/incendio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e1pro"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r2e1" />
+
+    <TextView
+        android:id="@+id/r1e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hurto"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e1pro"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario1" />
+
+    <TextView
+        android:id="@+id/r4e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sabotaje"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e1pro"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r3e1" />
+
+    <TextView
+        android:id="@+id/r1e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/hurto"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e2pro"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario2" />
+
+    <TextView
+        android:id="@+id/r4e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sabotaje"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e3pro"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r3e3" />
+
+    <TextView
+        android:id="@+id/r3e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/incendio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e3pro"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r2e3" />
+
+    <TextView
+        android:id="@+id/r4e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sabotaje"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e2pro"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r3e2" />
+
+    <TextView
+        android:id="@+id/r2e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homicidio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e3pro"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r1e3" />
+
+    <TextView
+        android:id="@+id/r3e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/incendio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e2pro"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/r2e2" />
+
+    <TextView
+        android:id="@+id/indicaciones"
+        android:layout_width="177dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/indicaciones"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/spr4e3pro"
+        tools:ignore="SmallSp" />
+
+    <Spinner
+        android:id="@+id/spr3e1con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val3"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e1con" />
+
+    <Spinner
+        android:id="@+id/spr2e1con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val2"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e1con" />
+
+    <Spinner
+        android:id="@+id/spr1e2con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/Val5"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario2" />
+
+    <Spinner
+        android:id="@+id/spr4e1con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val4"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e1con" />
+
+    <Spinner
+        android:id="@+id/spr3e2con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/Val7"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e2con" />
+
+    <Spinner
+        android:id="@+id/spr2e2con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/Val6"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e2con" />
+
+    <Spinner
+        android:id="@+id/spr2e3con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val10"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e3con" />
+
+    <Spinner
+        android:id="@+id/spr4e3con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val12"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e3con" />
+
+    <Spinner
+        android:id="@+id/spr3e3con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val11"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e3con" />
+
+    <Spinner
+        android:id="@+id/spr1e3con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val9"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario3" />
+
+    <Spinner
+        android:id="@+id/spr4e2con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val8"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e2con" />
+
+    <Spinner
+        android:id="@+id/spr1e1con"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9DA2AF"
+        android:entries="@array/ValoracionConsecuencia"
+        app:layout_constraintEnd_toStartOf="@+id/Val1"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario1" />
+
+    <Spinner
+        android:id="@+id/spr2e1pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e1con"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e1pro" />
+
+    <Spinner
+        android:id="@+id/spr4e2pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e2con"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e2pro" />
+
+    <Spinner
+        android:id="@+id/spr2e2pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e2con"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e2pro" />
+
+    <Spinner
+        android:id="@+id/spr3e2pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e2con"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e2pro" />
+
+    <Spinner
+        android:id="@+id/spr1e3pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e3con"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario3" />
+
+    <Spinner
+        android:id="@+id/spr2e3pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr2e3con"
+        app:layout_constraintTop_toBottomOf="@+id/spr1e3pro" />
+
+    <Spinner
+        android:id="@+id/spr3e3pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e3con"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e3pro" />
+
+    <Spinner
+        android:id="@+id/spr4e3pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e3con"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e3pro" />
+
+    <Spinner
+        android:id="@+id/spr1e2pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e2con"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario2" />
+
+    <Spinner
+        android:id="@+id/spr1e1pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr1e1con"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario1" />
+
+    <Spinner
+        android:id="@+id/spr4e1pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr4e1con"
+        app:layout_constraintTop_toBottomOf="@+id/spr3e1pro" />
+
+    <Spinner
+        android:id="@+id/spr3e1pro"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="52dp"
+        android:background="#A192B4"
+        android:entries="@array/ValoracionProbabilidad"
+        app:layout_constraintEnd_toStartOf="@+id/spr3e1con"
+        app:layout_constraintTop_toBottomOf="@+id/spr2e1pro" />
+
+    <Button
+        android:id="@+id/btnValorar"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="valorar"
+        android:text="@string/valorar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toEndOf="@+id/indicaciones"
+        app:layout_constraintTop_toBottomOf="@+id/spr4e3con" />
+
+    <TextView
+        android:id="@+id/Val3"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val2" />
+
+    <TextView
+        android:id="@+id/Val2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val1" />
+
+    <TextView
+        android:id="@+id/Val7"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val6" />
+
+    <TextView
+        android:id="@+id/Val4"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val3" />
+
+    <TextView
+        android:id="@+id/Val5"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario2" />
+
+    <TextView
+        android:id="@+id/Val6"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val5" />
+
+    <TextView
+        android:id="@+id/Val10"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val9" />
+
+    <TextView
+        android:id="@+id/Val11"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val10" />
+
+    <TextView
+        android:id="@+id/Val12"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val11" />
+
+    <TextView
+        android:id="@+id/Val9"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario3" />
+
+    <TextView
+        android:id="@+id/Val8"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Val7" />
+
+    <TextView
+        android:id="@+id/Val1"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/valriesgo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/Escenario1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02872777" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</HorizontalScrollView>
