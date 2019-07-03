@@ -50,3 +50,5 @@ Control de cambios (30/06/2019):
 
 Control de ccambios (02/07/19):
 - Se indexa versión 9.0, posee Scroll View para usuarios de pantallas pequeñas, así como restricciones de textos para emails invalidos y números en la casilla NIT.
+- Se indexa el proyecto completo en .ZIP
+- Se indexa una carpeta con los documentos de: Java (Clases), Layout (Vistas), Manifest y el Gridle para el estudio respectivo.
