@@ -2,6 +2,7 @@ package com.unad.riesgovisual;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,7 @@ public class ValoracionAplicacion extends AppCompatActivity {
 
         final EditText comentario = (EditText) findViewById(R.id.textComentario);
 
-        Button btnFinal = findViewById(R.id.btnFinal);
+        Button btnFinal = findViewById(R.id.btnFinal2);
 
         btnFinal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +30,15 @@ public class ValoracionAplicacion extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),
                                 "Comentario enviado", Toast.LENGTH_SHORT);
                 toast1.show();
+
             }
         });
+
+    }
+
+    public void nuevo (View view)
+    {
+        Intent nuevo = new Intent(this, Usuario.class);
+        startActivity(nuevo);
     }
 }

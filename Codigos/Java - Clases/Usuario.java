@@ -40,6 +40,12 @@ public class Usuario extends AppCompatActivity {
 
     }
 
+    public void informacion (View view)
+    {
+        Intent acerca = new Intent(this, AcercaDe.class);
+        startActivity(acerca);
+    }
+
     public void comprobar(View view) {
         String nombre = txt_Nombre.getText().toString();
         String mail = txt_Email.getText().toString();
